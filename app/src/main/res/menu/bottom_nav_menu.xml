@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/postFragment"
+        android:icon="@drawable/ic_post"
+        android:title="@string/post" />
+    <item
+        android:id="@+id/roomFragment"
+        android:icon="@drawable/ic_user"
+        android:title="@string/room" />
+    <item
+        android:id="@+id/friendsFragment"
+        android:icon="@drawable/ic_chat"
+        android:title="@string/chat" />
+    <item
+        android:id="@+id/peopleFragment"
+        android:icon="@drawable/ic_thumbs_up"
+        android:iconTint="@color/green"
+        android:title="@string/people" />
+
+
+
+</menu>

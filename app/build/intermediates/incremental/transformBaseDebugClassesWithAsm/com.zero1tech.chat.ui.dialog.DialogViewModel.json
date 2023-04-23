@@ -1,0 +1,1 @@
+{"className":"com.zero1tech.chat.ui.dialog.DialogViewModel","classAnnotations":["dagger.hilt.android.lifecycle.HiltViewModel"],"interfaces":["androidx.lifecycle.LifecycleObserver"],"superClasses":["androidx.lifecycle.ViewModel","java.lang.Object"]}

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <import type="android.view.View" />
+
+        <variable
+            name="model"
+            type="com.example.data.model.RoomModel" />
+
+        <variable
+            name="seeIt"
+            type="Boolean" />
+
+        <variable
+            name="isJoined"
+            type="Boolean" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cl_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/_10sdp">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/iv_profile_room"
+            loadImageUrl="@{model.icon}"
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="@dimen/_50sdp"
+            android:scaleType="centerCrop"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.CornerSize50Percent"
+            tools:background="@mipmap/ic_launcher" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_name_room"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:maxLength="35"
+            android:text="@{model.name}"
+            android:textColor="?black"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@id/iv_profile_room"
+            app:layout_constraintTop_toTopOf="@id/iv_profile_room"
+            tools:text="@string/enter_group_name" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_last_message"
+            styleLastMessage="@{seeIt}"
+            textWithSayHi="@{model.lastMassage.message}"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:maxLength="35"
+            android:paddingHorizontal="@dimen/_10sdp"
+            android:textSize="@dimen/_10ssp"
+            app:layout_constraintBottom_toBottomOf="@id/iv_profile_room"
+            app:layout_constraintStart_toEndOf="@id/iv_profile_room"
+            tools:text="@string/enter_group_name" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_join"
+            android:layout_width="@dimen/_80sdp"
+            android:layout_height="@dimen/_50sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:backgroundTint="?colorPrimary"
+            android:text="@string/join"
+
+            app:cornerRadius="@dimen/_10sdp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:visibility="@{isJoined ? View.VISIBLE : View.GONE}" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_time_last_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/_10sdp"
+            android:textSize="@dimen/_9ssp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/tv_name_room"
+            tools:text="12:00 PM"
+            tools:visibility="@{isJoined ? View.GONE : View.VISIBLE}"
+        />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.05dp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:background="?line_view"
+            app:layout_constraintTop_toBottomOf="@id/iv_profile_room" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

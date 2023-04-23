@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <import type="android.view.View" />
+
+        <variable
+            name="post"
+            type="com.example.data.model.Post" />
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:background="?background">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/row_image_view"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginHorizontal="@dimen/_10sdp"
+            android:layout_marginTop="15dp"
+            android:scaleType="centerCrop"
+            app:imageUri="@{post.image}"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:shapeAppearanceOverlay="@style/circle"
+            android:background="?background"
+            tools:src="@drawable/ic_default_rating" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/row_iv_menu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:src="@drawable/ic_menu_horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/row_image_view" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/row_text_view_post_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:text="@{post.title}"
+            android:textColor="?text_post"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@id/row_image_view"
+            app:layout_constraintTop_toTopOf="@id/row_image_view"
+            tools:text="Post Title" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/row_text_view_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="@id/row_text_view_post_title"
+            app:layout_constraintTop_toBottomOf="@id/row_text_view_post_title"
+            app:simpleDate="@{post.date}"
+            tools:text="Apr 2,2023 19:10 pm"
+            />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/row_post_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginHorizontal="@dimen/_12sdp"
+            android:text="@{post.message}"
+            android:textColor="?text_post"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/row_image_view"
+            tools:text="@string/post_lorem" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/row_like_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/shape_background_like"
+            android:drawableStart="@drawable/ic_like_small"
+            android:drawablePadding="5dp"
+            android:paddingStart="4dp"
+            android:visibility="@{post.likeIsVisible ?View.VISIBLE:View.INVISIBLE}"
+            app:layout_constraintStart_toStartOf="parent"
+
+            app:layout_constraintTop_toBottomOf="@id/row_post_content" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_like_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:text="@{post.likeCount.toString()}"
+            android:textSize="@dimen/_10ssp"
+            android:visibility="@{post.likeIsVisible ?View.VISIBLE:View.GONE}"
+            app:layout_constraintBottom_toBottomOf="@id/row_like_count"
+            app:layout_constraintStart_toEndOf="@id/row_like_count"
+            app:layout_constraintTop_toTopOf="@id/row_like_count"
+            app:layout_constraintVertical_bias="1.0"
+            tools:text="17 people like this" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/row_share_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:text="@{post.shareCount.toString()}"
+            android:visibility="@{post.shareIsVisible ?View.VISIBLE:View.GONE}"
+            app:layout_constraintEnd_toStartOf="@id/row_share_count_view"
+            app:layout_constraintTop_toBottomOf="@id/row_post_content"
+            tools:text="50" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/row_share_count_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:text="Share"
+            android:visibility="@{post.shareIsVisible ?View.VISIBLE:View.GONE}"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/row_post_content"
+            tools:text="Share" />
+
+        <View
+            android:id="@+id/row_gray_line"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginTop="7dp"
+            android:layout_marginHorizontal="@dimen/_10sdp"
+            android:background="#ddd"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/row_like_count" />
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_like"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:drawablePadding="10dp"
+            android:gravity="start|center"
+            android:paddingHorizontal="10dp"
+            android:text="@string/like"
+            app:drawableStartImage="@{post.isChecked()}"
+            app:layout_constraintEnd_toStartOf="@id/btn_share"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/row_gray_line"
+            tools:drawableStart="@drawable/ic_baseline_thumb_up_24" />
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_share"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/ic_btn_share"
+            android:drawablePadding="10dp"
+            android:gravity="start|center"
+            android:text="@string/share"
+            app:layout_constraintBottom_toBottomOf="@+id/btn_like"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/btn_like"
+            app:layout_constraintTop_toTopOf="@+id/btn_like" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

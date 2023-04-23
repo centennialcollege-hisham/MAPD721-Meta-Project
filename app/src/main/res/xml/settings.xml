@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ListPreference
+        app:defaultValue="@string/shared_default"
+        app:entries="@array/theme_entries"
+        app:entryValues="@array/theme_values"
+        app:icon="@drawable/ic_theme"
+        app:key="theme"
+        app:title="@string/theme"
+        app:useSimpleSummaryProvider="true" />
+
+    <ListPreference
+        app:defaultValue="@string/shared_default"
+        app:entries="@array/language_entries"
+        app:entryValues="@array/language_values"
+        app:icon="@drawable/ic_language"
+        app:key="language"
+        app:title="@string/language"
+        app:useSimpleSummaryProvider="true" />
+
+    <SwitchPreferenceCompat
+        android:defaultValue="true"
+        android:key="switch"
+        android:summary="@string/enable_notification"
+        android:title="@string/notification"
+        app:icon="@drawable/ic_notification" />
+</PreferenceScreen>

@@ -1,0 +1,1 @@
+{"className":"com.zero1tech.chat.databinding.FragmentChatBindingImpl","classAnnotations":[],"interfaces":["androidx.databinding.Observable","androidx.viewbinding.ViewBinding"],"superClasses":["com.zero1tech.chat.databinding.FragmentChatBinding","androidx.databinding.ViewDataBinding","androidx.databinding.BaseObservable","java.lang.Object"]}

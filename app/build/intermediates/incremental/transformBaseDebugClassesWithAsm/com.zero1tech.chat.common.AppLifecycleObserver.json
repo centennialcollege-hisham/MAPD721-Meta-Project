@@ -1,0 +1,1 @@
+{"className":"com.zero1tech.chat.common.AppLifecycleObserver","classAnnotations":[],"interfaces":["androidx.lifecycle.LifecycleObserver"],"superClasses":["java.lang.Object"]}

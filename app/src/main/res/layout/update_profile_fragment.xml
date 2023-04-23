@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="model"
+            type="com.example.data.model.UserRemote" />
+
+        <variable
+            name="clickable"
+            type="Boolean" />
+    </data>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="?background"
+        tools:context=".ui.setting.updateprofiledialog.UpdateProfileFragment">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/iv_profile"
+            style="@style/Animation.Design.BottomSheetDialog"
+            imageUri="@{model.profile}"
+            android:layout_width="@dimen/_170sdp"
+            android:layout_height="@dimen/_170sdp"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_80sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:src="@tools:sample/avatars" />
+
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab_edit_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_15sdp"
+            android:backgroundTint="?tool_bar"
+            android:clickable="@{clickable}"
+            app:fabSize="mini"
+            app:layout_constraintBottom_toBottomOf="@id/iv_profile"
+            app:layout_constraintEnd_toEndOf="@id/iv_profile"
+            app:srcCompat="@drawable/ic_camera" />
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_label_ago"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/_40sdp"
+            android:layout_marginTop="@dimen/_70sdp"
+            android:background="?background"
+            android:text="@string/your_age"
+
+            android:paddingHorizontal="@dimen/_5sdp"
+            app:layout_constraintEnd_toEndOf="@id/iv_profile"
+            app:layout_constraintStart_toStartOf="@id/iv_profile"
+            app:layout_constraintTop_toBottomOf="@id/iv_profile" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_ago"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/_40sdp"
+            android:layout_marginTop="@dimen/_7sdp"
+            android:background="?background"
+            android:paddingHorizontal="@dimen/_5sdp"
+            android:text="@{model.getAgeWithYear}"
+            android:textColor="?text_post"
+            app:layout_constraintEnd_toEndOf="@id/iv_profile"
+            app:layout_constraintStart_toStartOf="@id/iv_profile"
+            app:layout_constraintTop_toBottomOf="@id/tv_label_ago"
+            tools:text="18 year" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_label_from"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/_40sdp"
+            android:background="?background"
+            android:text="@string/your_age"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:paddingHorizontal="@dimen/_5sdp"
+            app:layout_constraintEnd_toEndOf="@id/iv_profile"
+            app:layout_constraintStart_toStartOf="@id/tv_ago"
+            app:layout_constraintTop_toBottomOf="@id/tv_ago" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_from"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/_40sdp"
+            android:layout_marginTop="@dimen/_7sdp"
+            android:paddingHorizontal="@dimen/_5sdp"
+            android:text="@{model.from}"
+            android:textColor="?text_post"
+            app:layout_constraintEnd_toEndOf="@id/iv_profile"
+            app:layout_constraintStart_toStartOf="@id/tv_label_from"
+            app:layout_constraintTop_toBottomOf="@id/tv_label_from"
+            tools:text="Amman" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_label_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/_40sdp"
+            android:layout_marginTop="@dimen/_25sdp"
+            android:paddingHorizontal="@dimen/_5sdp"
+            android:text="@string/full_name"
+            android:background="?background"
+            android:textColor="?text_full_name"
+            app:layout_constraintEnd_toEndOf="@id/iv_profile"
+            app:layout_constraintStart_toStartOf="@id/tv_ago"
+            app:layout_constraintTop_toBottomOf="@id/tv_from" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/et_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/_40sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:clickable="@{clickable}"
+            android:focusable="@{clickable}"
+            android:paddingHorizontal="@dimen/_5sdp"
+            android:text="@{model.fullName}"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/_12ssp"
+            app:backgroundTint="@android:color/darker_gray"
+            app:layout_constraintEnd_toEndOf="@id/iv_profile"
+            app:layout_constraintStart_toStartOf="@id/tv_label_from"
+            app:layout_constraintTop_toBottomOf="@id/tv_label_name"
+            tools:text="Hisham"
+            />
+
+        <TextView
+            android:id="@+id/tv_change"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_40sdp"
+            android:text="@string/you_can_change"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/et_name" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:backgroundTint="?tool_bar"
+            android:clickable="@{clickable}"
+            android:paddingHorizontal="@dimen/_70sdp"
+            android:paddingVertical="@dimen/_15sdp"
+            android:text="@string/update_profile"
+            app:cornerRadius="@dimen/_30sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_change"
+
+            />
+
+        <ProgressBar
+            android:id="@+id/progress_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_40sdp"
+            android:backgroundTint="@color/colorPrimary"
+            android:indeterminateTint="@color/colorPrimary"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/iv_profile"
+            tools:visibility="visible" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

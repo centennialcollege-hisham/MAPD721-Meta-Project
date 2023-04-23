@@ -1,0 +1,1 @@
+{"className":"com.zero1tech.chat.ui.people.PeopleViewModel_HiltModules$KeyModule","classAnnotations":["dagger.Module","dagger.hilt.InstallIn"],"interfaces":[],"superClasses":["java.lang.Object"]}

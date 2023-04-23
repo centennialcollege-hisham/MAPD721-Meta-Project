@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <import type="android.view.View" />
+
+        <variable
+            name="showImagePreview"
+            type="Boolean" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/root_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="?chat_background"
+        tools:context=".ui.chat.ChatFragment">
+
+        <com.google.android.material.progressindicator.LinearProgressIndicator
+            android:id="@+id/linear_progress_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:elevation="10dp"
+            android:indeterminate="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:trackThickness="5dp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_read_more"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/colorPrimary"
+            android:text="@string/read_more"
+            android:textAllCaps="false"
+            android:textSize="10sp"
+            android:textStyle="bold"
+            android:visibility="gone"
+            app:cornerRadius="@dimen/_400sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/linear_progress_bar"
+            tools:visibility="visible" />
+
+        <ProgressBar
+            android:id="@+id/progress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/btn_read_more"
+            tools:visibility="visible"
+
+            />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_chat"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginBottom="@dimen/_5sdp"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            app:layout_constraintBottom_toTopOf="@+id/et_chat_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/progress"
+            app:stackFromEnd="true"
+            tools:listitem="@layout/row_chat" />
+
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/et_chat_content"
+            android:layout_width="0dp"
+            android:layout_height="41dp"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/et_shape"
+            android:gravity="start|center"
+            android:hint="@string/type_a_message"
+            android:inputType="text"
+            android:minHeight="@dimen/_40sdp"
+            android:paddingHorizontal="@dimen/_10sdp"
+            android:paddingStart="@dimen/_33sdp"
+            android:textColor="@color/black"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/fab_send"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/fab_send"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:background="@drawable/shape_background_btn_send"
+            android:backgroundTint="?colorPrimary"
+            android:padding="@dimen/_5sdp"
+            android:src="@drawable/ic_send"
+            android:tint="@android:color/white"
+            app:layout_constraintBottom_toBottomOf="@id/et_chat_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/et_chat_content" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/iv_emoji"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_2sdp"
+            android:src="@drawable/ic_emoji"
+            app:layout_constraintBottom_toBottomOf="@id/et_chat_content"
+            app:layout_constraintStart_toStartOf="@id/et_chat_content"
+            app:layout_constraintTop_toTopOf="@id/et_chat_content" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#83000000"
+            android:elevation="1dp"
+            tools:visibility="gone"
+            android:visibility="@{showImagePreview? View.VISIBLE : View.GONE}"
+            tools:background="@tools:sample/avatars" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/image_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:elevation="1dp"
+            android:visibility="@{showImagePreview? View.VISIBLE : View.GONE}"
+            tools:visibility="gone"
+            tools:background="@tools:sample/avatars" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/image_view_close"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/btn_clear"
+            android:elevation="2dp"
+            android:visibility="@{showImagePreview? View.VISIBLE : View.GONE}"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ProgressBar
+            android:id="@+id/progress_bar"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_gravity="center"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

@@ -1,0 +1,1 @@
+{"className":"com.zero1tech.chat.ui.room.chat.MessagesAdapter$DiffCallback","classAnnotations":[],"interfaces":[],"superClasses":["androidx.recyclerview.widget.DiffUtil$ItemCallback","java.lang.Object"]}

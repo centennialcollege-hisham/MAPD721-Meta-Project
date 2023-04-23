@@ -1,0 +1,1 @@
+{"className":"com.zero1tech.chat.databinding.RowPeopleBindingImpl","classAnnotations":[],"interfaces":["androidx.databinding.Observable","androidx.viewbinding.ViewBinding"],"superClasses":["com.zero1tech.chat.databinding.RowPeopleBinding","androidx.databinding.ViewDataBinding","androidx.databinding.BaseObservable","java.lang.Object"]}

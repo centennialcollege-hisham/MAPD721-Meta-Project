@@ -1,0 +1,1 @@
+{"className":"com.zero1tech.chat.databinding.UpdateProfileFragmentBindingImpl","classAnnotations":[],"interfaces":["androidx.databinding.Observable","androidx.viewbinding.ViewBinding"],"superClasses":["com.zero1tech.chat.databinding.UpdateProfileFragmentBinding","androidx.databinding.ViewDataBinding","androidx.databinding.BaseObservable","java.lang.Object"]}

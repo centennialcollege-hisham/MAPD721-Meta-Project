@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <attr name="text_black_primary" format="reference" />
+    <attr name="chat_background" format="reference" />
+    <attr name="background_chat_right_side" format="reference" />
+    <attr name="background_chat_left_side" format="reference" />
+    <attr name="white" format="reference" />
+    <attr name="black" format="reference" />
+    <attr name="line_view" format="reference" />
+    <attr name="bottom_nav_color" format="reference" />
+    <attr name="background" format="reference" />
+    <attr name="background_post" format="reference" />
+    <attr name="text_post" format="reference" />
+    <attr name="background_people" format="reference" />
+    <attr name="tool_bar" format="reference" />
+    <attr name="text_full_name" format="reference" />
+
+    <attr name="colorSurface" format="reference"/>
+    <attr name="text" format="reference"/>
+
+
+</resources>

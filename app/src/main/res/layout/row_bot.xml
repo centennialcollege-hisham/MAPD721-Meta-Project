@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="isImagesBut"
+            type="Boolean" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cl_parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="@dimen/_10sdp"
+        android:paddingTop="@dimen/_10sdp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/iv_profile"
+            android:layout_width="@dimen/_55sdp"
+            android:layout_height="@dimen/_55sdp"
+            android:background="@drawable/ic_chatbot"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_20sdp"
+            android:text="@{isImagesBut ? @string/chat_images : @string/chat_bot}"
+            android:textColor="?black"
+            tools:text="@tools:sample/last_names"
+            android:textSize="@dimen/_12ssp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@id/iv_profile"
+            app:layout_constraintTop_toTopOf="@id/iv_profile" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/iv_available"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            app:layout_constraintTop_toTopOf="@id/tv_name"
+            app:layout_constraintEnd_toEndOf="parent"
+            tools:layout_editor_absoluteX="371dp"
+            tools:src="@drawable/ic_dot_on" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_last_message"
+            styleLastMessage="@{false}"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_7sdp"
+            android:layout_marginEnd="@dimen/_20sdp"
+            android:maxLength="35"
+            android:maxLines="1"
+            android:text="@string/can_request_whatever"
+            app:layout_constraintStart_toStartOf="@id/tv_name"
+            app:layout_constraintTop_toBottomOf="@id/tv_name"
+            tools:text="kefk ya 9a7by w kf alahwal inshallah tmama ya 3'aly ana shftk sodfeh blablah balh blah blah blah balh" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="18dp"
+            android:layout_height="20dp"
+            app:layout_constraintTop_toBottomOf="@id/iv_available"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:srcCompat="@drawable/ic_pin" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.05dp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:background="?line_view"
+            app:layout_constraintTop_toBottomOf="@id/iv_profile" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

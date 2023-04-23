@@ -1,0 +1,1 @@
+{"className":"com.zero1tech.chat.ui.setting.contactus.ContactUsViewModel","classAnnotations":["dagger.hilt.android.lifecycle.HiltViewModel"],"interfaces":[],"superClasses":["androidx.lifecycle.ViewModel","java.lang.Object"]}

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="model"
+            type="com.example.data.model.UserRemote" />
+
+        <variable
+            name="isJoin"
+            type="Boolean" />
+        <variable
+            name="seeIt"
+            type="Boolean" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cl_parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="@dimen/_10sdp"
+        android:paddingTop="@dimen/_10sdp"
+        >
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/iv_profile"
+            loadImageUrl="@{model.profile}"
+            android:layout_width="@dimen/_55sdp"
+            android:layout_height="@dimen/_55sdp"
+            android:background="?background"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:background="@drawable/account" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_20sdp"
+            android:text="@{model.fullName}"
+            android:textSize="@dimen/_12ssp"
+            android:textColor="?black"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@id/iv_profile"
+            app:layout_constraintTop_toTopOf="@id/iv_profile"
+            tools:text="Hisham " />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/iv_available"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            app:joinImage="@{isJoin}"
+            app:layout_constraintEnd_toEndOf="@id/tv_date_last_message"
+            app:layout_constraintTop_toTopOf="@id/tv_name"
+            tools:src="@drawable/ic_dot_on" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_last_message"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_20sdp"
+            android:maxLength="35"
+            android:layout_marginTop="@dimen/_7sdp"
+            android:maxLines="1"
+            styleLastMessage="@{seeIt}"
+            android:text="@{model.lastMessage}"
+            app:layout_constraintStart_toStartOf="@id/tv_name"
+            app:layout_constraintTop_toBottomOf="@id/tv_name"
+            tools:text="kefk ya 9a7by w kf alahwal inshallah tmama ya 3'aly ana shftk sodfeh blablah balh blah blah blah balh" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_date_last_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_10sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/tv_last_message"
+            tools:text="30 Sep 2020" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.05dp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:background="?line_view"
+            app:layout_constraintTop_toBottomOf="@id/iv_profile" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#4267B2</color>
+    <color name="colorPrimaryDark">#03201D</color>
+    <color name="colorAccent">#02A04E</color>
+    <color name="green">#02A04E</color>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="white_dark">#eaeaea</color>
+    <color name="mainText">#FF000000</color>
+    <color name="colorGreyLt">#AD87868A</color>
+    <color name="yellow_dark">#fee900</color>
+    <color name="teal_200">#ff80cbc4</color>
+    <color name="teal_500">#ff009688</color>
+    <color name="teal_700">#ff00796b</color>
+    <color name="blue_grey_200">#ffb0bec5</color>
+    <color name="blue_grey_500">#ff607d8b</color>
+    <color name="blue_grey_700">#ff455a64</color>
+
+    <color name="background_posts">#9B999E</color>
+
+    <color name="grayDark">#616068</color>
+    <color name="main_color">#3b5998</color>
+
+    <color name="line_view_light">#6B000000</color>
+    <color name="line_view_dark">#6B464545</color>
+    <color name="background_left_side_light">#fff</color>
+    <color name="background_left_side_dark">#075E54</color>
+
+    <color name="background_right_side_light">#DCF8C6</color>
+    <color name="background_right_side_dark">#128C7E</color>
+    <color name="main_drawer_bg">#661FFF</color>
+    <color name="background">#242527</color>
+    <color name="gray_dark">#242527</color>
+    <color name="background_post">#171819</color>
+
+    <color name="text_post">#171819</color>
+
+
+    <color name="drawer_item_selected">#F50057</color>
+    <color name="drawer_item_bg_selected">#F4EFF8</color>
+</resources>

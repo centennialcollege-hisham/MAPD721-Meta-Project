@@ -1,0 +1,174 @@
+[
+    {
+        "merged": "/Users/hsanimeh/Desktop/####Test/ MAPD721-P1-Group2- Hisham Abu Sanimeh/Source Code/app/build/intermediates/incremental/mergeBaseDebugResources/stripped.dir/layout/fragment_search_people.xml",
+        "source": "/Users/hsanimeh/Desktop/####Test/ MAPD721-P1-Group2- Hisham Abu Sanimeh/Source Code/app/src/main/res/layout/fragment_search_people.xml"
+    },
+    {
+        "merged": "/Users/hsanimeh/Desktop/####Test/ MAPD721-P1-Group2- Hisham Abu Sanimeh/Source Code/app/build/intermediates/incremental/mergeBaseDebugResources/stripped.dir/layout/fragment_password.xml",
+        "source": "/Users/hsanimeh/Desktop/####Test/ MAPD721-P1-Group2- Hisham Abu Sanimeh/Source Code/app/src/main/res/layout/fragment_password.xml"
+    },
+    {
+        "merged": "/Users/hsanimeh/Desktop/####Test/ MAPD721-P1-Group2- Hisham Abu Sanimeh/Source Code/app/build/intermediates/incremental/mergeBaseDebugResources/stripped.dir/layout/row_image.xml",
+        "source": "/Users/hsanimeh/Desktop/####Test/ MAPD721-P1-Group2- Hisham Abu Sanimeh/Source Code/app/src/main/res/layout/row_image.xml"
+    },
+    {
+        "merged": "/Users/hsanimeh/Desktop/####Test/ MAPD721-P1-Group2- Hisham Abu Sanimeh/Source Code/app/build/intermediates/incremental/mergeBaseDebugResources/stripped.dir/layout/dialog_success.xml",
+        "source": "/Users/hsanimeh/Desktop/####Test/ MAPD721-P1-Group2- Hisham Abu Sanimeh/Source Code/app/src/main/res/layout/dialog_success.xml"
+    },
+    {
+        "merged": "/Users/hsanimeh/Desktop/####Test/ MAPD721-P1-Group2- Hisham Abu Sanimeh/Source Code/app/build/intermediates/incremental/mergeBaseDebugResources/stripped.dir/layout/row_chat_bot.xml",
+        "source": "/Users/hsanimeh/Desktop/####Test/ MAPD721-P1-Group2- Hisham Abu Sanimeh/Source Code/app/src/main/res/layout/row_chat_bot.xml"
+    },
+    {
+        "merged": "/Users/hsanimeh/Desktop/####Test/ MAPD721-P1-Group2- Hisham Abu Sanimeh/Source Code/app/build/intermediates/incremental/mergeBaseDebugResources/stripped.dir/layout/activity_main.xml",
+        "source": "/Users/hsanimeh/Desktop/####Test/ MAPD721-P1-Group2- Hisham Abu Sanimeh/Source Code/app/src/main/res/layout/activity_main.xml"
+    },
+    {
+        "merged": "/Users/hsanimeh/Desktop/####Test/ MAPD721-P1-Group2- Hisham Abu Sanimeh/Source Code/app/build/intermediates/incremental/mergeBaseDebugResources/stripped.dir/layout/fragment_force_update.xml",
+        "source": "/Users/hsanimeh/Desktop/####Test/ MAPD721-P1-Group2- Hisham Abu Sanimeh/Source Code/app/src/main/res/layout/fragment_force_update.xml"
+    },
+    {
+        "merged": "/Users/hsanimeh/Desktop/####Test/ MAPD721-P1-Group2- Hisham Abu Sanimeh/Source Code/app/build/intermediates/incremental/mergeBaseDebugResources/stripped.dir/layout/activity_search_people.xml",
+        "source": "/Users/hsanimeh/Desktop/####Test/ MAPD721-P1-Group2- Hisham Abu Sanimeh/Source Code/app/src/main/res/layout/activity_search_people.xml"
+    },
+    {
+        "merged": "/Users/hsanimeh/Desktop/####Test/ MAPD721-P1-Group2- Hisham Abu Sanimeh/Source Code/app/build/intermediates/incremental/mergeBaseDebugResources/stripped.dir/layout/row_bot.xml",
+        "source": "/Users/hsanimeh/Desktop/####Test/ MAPD721-P1-Group2- Hisham Abu Sanimeh/Source Code/app/src/main/res/layout/row_bot.xml"
+    },
+    {
+        "merged": "/Users/hsanimeh/Desktop/####Test/ MAPD721-P1-Group2- Hisham Abu Sanimeh/Source Code/app/build/intermediates/incremental/mergeBaseDebugResources/stripped.dir/layout/row_images_bot.xml",
+        "source": "/Users/hsanimeh/Desktop/####Test/ MAPD721-P1-Group2- Hisham Abu Sanimeh/Source Code/app/src/main/res/layout/row_images_bot.xml"
+    },
+    {
+        "merged": "/Users/hsanimeh/Desktop/####Test/ MAPD721-P1-Group2- Hisham Abu Sanimeh/Source Code/app/build/intermediates/incremental/mergeBaseDebugResources/stripped.dir/layout/fragment_post_hidden.xml",
+        "source": "/Users/hsanimeh/Desktop/####Test/ MAPD721-P1-Group2- Hisham Abu Sanimeh/Source Code/app/src/main/res/layout/fragment_post_hidden.xml"
+    },
+    {
+        "merged": "/Users/hsanimeh/Desktop/####Test/ MAPD721-P1-Group2- Hisham Abu Sanimeh/Source Code/app/build/intermediates/incremental/mergeBaseDebugResources/stripped.dir/layout/fragment_request.xml",
+        "source": "/Users/hsanimeh/Desktop/####Test/ MAPD721-P1-Group2- Hisham Abu Sanimeh/Source Code/app/src/main/res/layout/fragment_request.xml"
+    },
+    {
+        "merged": "/Users/hsanimeh/Desktop/####Test/ MAPD721-P1-Group2- Hisham Abu Sanimeh/Source Code/app/build/intermediates/incremental/mergeBaseDebugResources/stripped.dir/layout/row_people.xml",
+        "source": "/Users/hsanimeh/Desktop/####Test/ MAPD721-P1-Group2- Hisham Abu Sanimeh/Source Code/app/src/main/res/layout/row_people.xml"
+    },
+    {
+        "merged": "/Users/hsanimeh/Desktop/####Test/ MAPD721-P1-Group2- Hisham Abu Sanimeh/Source Code/app/build/intermediates/incremental/mergeBaseDebugResources/stripped.dir/layout/row_chat.xml",
+        "source": "/Users/hsanimeh/Desktop/####Test/ MAPD721-P1-Group2- Hisham Abu Sanimeh/Source Code/app/src/main/res/layout/row_chat.xml"
+    },
+    {
+        "merged": "/Users/hsanimeh/Desktop/####Test/ MAPD721-P1-Group2- Hisham Abu Sanimeh/Source Code/app/build/intermediates/incremental/mergeBaseDebugResources/stripped.dir/layout/progress_dialog.xml",
+        "source": "/Users/hsanimeh/Desktop/####Test/ MAPD721-P1-Group2- Hisham Abu Sanimeh/Source Code/app/src/main/res/layout/progress_dialog.xml"
+    },
+    {
+        "merged": "/Users/hsanimeh/Desktop/####Test/ MAPD721-P1-Group2- Hisham Abu Sanimeh/Source Code/app/build/intermediates/incremental/mergeBaseDebugResources/stripped.dir/layout/row_post.xml",
+        "source": "/Users/hsanimeh/Desktop/####Test/ MAPD721-P1-Group2- Hisham Abu Sanimeh/Source Code/app/src/main/res/layout/row_post.xml"
+    },
+    {
+        "merged": "/Users/hsanimeh/Desktop/####Test/ MAPD721-P1-Group2- Hisham Abu Sanimeh/Source Code/app/build/intermediates/incremental/mergeBaseDebugResources/stripped.dir/layout/info_dialog.xml",
+        "source": "/Users/hsanimeh/Desktop/####Test/ MAPD721-P1-Group2- Hisham Abu Sanimeh/Source Code/app/src/main/res/layout/info_dialog.xml"
+    },
+    {
+        "merged": "/Users/hsanimeh/Desktop/####Test/ MAPD721-P1-Group2- Hisham Abu Sanimeh/Source Code/app/build/intermediates/incremental/mergeBaseDebugResources/stripped.dir/layout/row_chat_room.xml",
+        "source": "/Users/hsanimeh/Desktop/####Test/ MAPD721-P1-Group2- Hisham Abu Sanimeh/Source Code/app/src/main/res/layout/row_chat_room.xml"
+    },
+    {
+        "merged": "/Users/hsanimeh/Desktop/####Test/ MAPD721-P1-Group2- Hisham Abu Sanimeh/Source Code/app/build/intermediates/incremental/mergeBaseDebugResources/stripped.dir/layout/row_user_request.xml",
+        "source": "/Users/hsanimeh/Desktop/####Test/ MAPD721-P1-Group2- Hisham Abu Sanimeh/Source Code/app/src/main/res/layout/row_user_request.xml"
+    },
+    {
+        "merged": "/Users/hsanimeh/Desktop/####Test/ MAPD721-P1-Group2- Hisham Abu Sanimeh/Source Code/app/build/intermediates/incremental/mergeBaseDebugResources/stripped.dir/layout/fragment_people.xml",
+        "source": "/Users/hsanimeh/Desktop/####Test/ MAPD721-P1-Group2- Hisham Abu Sanimeh/Source Code/app/src/main/res/layout/fragment_people.xml"
+    },
+    {
+        "merged": "/Users/hsanimeh/Desktop/####Test/ MAPD721-P1-Group2- Hisham Abu Sanimeh/Source Code/app/build/intermediates/incremental/mergeBaseDebugResources/stripped.dir/layout/fragment_rooms.xml",
+        "source": "/Users/hsanimeh/Desktop/####Test/ MAPD721-P1-Group2- Hisham Abu Sanimeh/Source Code/app/src/main/res/layout/fragment_rooms.xml"
+    },
+    {
+        "merged": "/Users/hsanimeh/Desktop/####Test/ MAPD721-P1-Group2- Hisham Abu Sanimeh/Source Code/app/build/intermediates/incremental/mergeBaseDebugResources/stripped.dir/layout/date_year_picker_dialog.xml",
+        "source": "/Users/hsanimeh/Desktop/####Test/ MAPD721-P1-Group2- Hisham Abu Sanimeh/Source Code/app/src/main/res/layout/date_year_picker_dialog.xml"
+    },
+    {
+        "merged": "/Users/hsanimeh/Desktop/####Test/ MAPD721-P1-Group2- Hisham Abu Sanimeh/Source Code/app/build/intermediates/incremental/mergeBaseDebugResources/stripped.dir/layout/drawer_menu_header.xml",
+        "source": "/Users/hsanimeh/Desktop/####Test/ MAPD721-P1-Group2- Hisham Abu Sanimeh/Source Code/app/src/main/res/layout/drawer_menu_header.xml"
+    },
+    {
+        "merged": "/Users/hsanimeh/Desktop/####Test/ MAPD721-P1-Group2- Hisham Abu Sanimeh/Source Code/app/build/intermediates/incremental/mergeBaseDebugResources/stripped.dir/layout/create_room_dialog.xml",
+        "source": "/Users/hsanimeh/Desktop/####Test/ MAPD721-P1-Group2- Hisham Abu Sanimeh/Source Code/app/src/main/res/layout/create_room_dialog.xml"
+    },
+    {
+        "merged": "/Users/hsanimeh/Desktop/####Test/ MAPD721-P1-Group2- Hisham Abu Sanimeh/Source Code/app/build/intermediates/incremental/mergeBaseDebugResources/stripped.dir/layout/fragment_about.xml",
+        "source": "/Users/hsanimeh/Desktop/####Test/ MAPD721-P1-Group2- Hisham Abu Sanimeh/Source Code/app/src/main/res/layout/fragment_about.xml"
+    },
+    {
+        "merged": "/Users/hsanimeh/Desktop/####Test/ MAPD721-P1-Group2- Hisham Abu Sanimeh/Source Code/app/build/intermediates/incremental/mergeBaseDebugResources/stripped.dir/layout/fragment_maintenance.xml",
+        "source": "/Users/hsanimeh/Desktop/####Test/ MAPD721-P1-Group2- Hisham Abu Sanimeh/Source Code/app/src/main/res/layout/fragment_maintenance.xml"
+    },
+    {
+        "merged": "/Users/hsanimeh/Desktop/####Test/ MAPD721-P1-Group2- Hisham Abu Sanimeh/Source Code/app/build/intermediates/incremental/mergeBaseDebugResources/stripped.dir/layout/fragment_privacy.xml",
+        "source": "/Users/hsanimeh/Desktop/####Test/ MAPD721-P1-Group2- Hisham Abu Sanimeh/Source Code/app/src/main/res/layout/fragment_privacy.xml"
+    },
+    {
+        "merged": "/Users/hsanimeh/Desktop/####Test/ MAPD721-P1-Group2- Hisham Abu Sanimeh/Source Code/app/build/intermediates/incremental/mergeBaseDebugResources/stripped.dir/layout/item_location.xml",
+        "source": "/Users/hsanimeh/Desktop/####Test/ MAPD721-P1-Group2- Hisham Abu Sanimeh/Source Code/app/src/main/res/layout/item_location.xml"
+    },
+    {
+        "merged": "/Users/hsanimeh/Desktop/####Test/ MAPD721-P1-Group2- Hisham Abu Sanimeh/Source Code/app/build/intermediates/incremental/mergeBaseDebugResources/stripped.dir/layout/row_user.xml",
+        "source": "/Users/hsanimeh/Desktop/####Test/ MAPD721-P1-Group2- Hisham Abu Sanimeh/Source Code/app/src/main/res/layout/row_user.xml"
+    },
+    {
+        "merged": "/Users/hsanimeh/Desktop/####Test/ MAPD721-P1-Group2- Hisham Abu Sanimeh/Source Code/app/build/intermediates/incremental/mergeBaseDebugResources/stripped.dir/layout/bottom_sheet_dialog.xml",
+        "source": "/Users/hsanimeh/Desktop/####Test/ MAPD721-P1-Group2- Hisham Abu Sanimeh/Source Code/app/src/main/res/layout/bottom_sheet_dialog.xml"
+    },
+    {
+        "merged": "/Users/hsanimeh/Desktop/####Test/ MAPD721-P1-Group2- Hisham Abu Sanimeh/Source Code/app/build/intermediates/incremental/mergeBaseDebugResources/stripped.dir/layout/fragment_post.xml",
+        "source": "/Users/hsanimeh/Desktop/####Test/ MAPD721-P1-Group2- Hisham Abu Sanimeh/Source Code/app/src/main/res/layout/fragment_post.xml"
+    },
+    {
+        "merged": "/Users/hsanimeh/Desktop/####Test/ MAPD721-P1-Group2- Hisham Abu Sanimeh/Source Code/app/build/intermediates/incremental/mergeBaseDebugResources/stripped.dir/layout/fragment_room_chat.xml",
+        "source": "/Users/hsanimeh/Desktop/####Test/ MAPD721-P1-Group2- Hisham Abu Sanimeh/Source Code/app/src/main/res/layout/fragment_room_chat.xml"
+    },
+    {
+        "merged": "/Users/hsanimeh/Desktop/####Test/ MAPD721-P1-Group2- Hisham Abu Sanimeh/Source Code/app/build/intermediates/incremental/mergeBaseDebugResources/stripped.dir/layout/confirm_dialog.xml",
+        "source": "/Users/hsanimeh/Desktop/####Test/ MAPD721-P1-Group2- Hisham Abu Sanimeh/Source Code/app/src/main/res/layout/confirm_dialog.xml"
+    },
+    {
+        "merged": "/Users/hsanimeh/Desktop/####Test/ MAPD721-P1-Group2- Hisham Abu Sanimeh/Source Code/app/build/intermediates/incremental/mergeBaseDebugResources/stripped.dir/layout/row_rooms.xml",
+        "source": "/Users/hsanimeh/Desktop/####Test/ MAPD721-P1-Group2- Hisham Abu Sanimeh/Source Code/app/src/main/res/layout/row_rooms.xml"
+    },
+    {
+        "merged": "/Users/hsanimeh/Desktop/####Test/ MAPD721-P1-Group2- Hisham Abu Sanimeh/Source Code/app/build/intermediates/incremental/mergeBaseDebugResources/stripped.dir/layout/update_profile_fragment.xml",
+        "source": "/Users/hsanimeh/Desktop/####Test/ MAPD721-P1-Group2- Hisham Abu Sanimeh/Source Code/app/src/main/res/layout/update_profile_fragment.xml"
+    },
+    {
+        "merged": "/Users/hsanimeh/Desktop/####Test/ MAPD721-P1-Group2- Hisham Abu Sanimeh/Source Code/app/build/intermediates/incremental/mergeBaseDebugResources/stripped.dir/layout/row_search_people.xml",
+        "source": "/Users/hsanimeh/Desktop/####Test/ MAPD721-P1-Group2- Hisham Abu Sanimeh/Source Code/app/src/main/res/layout/row_search_people.xml"
+    },
+    {
+        "merged": "/Users/hsanimeh/Desktop/####Test/ MAPD721-P1-Group2- Hisham Abu Sanimeh/Source Code/app/build/intermediates/incremental/mergeBaseDebugResources/stripped.dir/layout/notification_layout.xml",
+        "source": "/Users/hsanimeh/Desktop/####Test/ MAPD721-P1-Group2- Hisham Abu Sanimeh/Source Code/app/src/main/res/layout/notification_layout.xml"
+    },
+    {
+        "merged": "/Users/hsanimeh/Desktop/####Test/ MAPD721-P1-Group2- Hisham Abu Sanimeh/Source Code/app/build/intermediates/incremental/mergeBaseDebugResources/stripped.dir/layout/fragment_splash.xml",
+        "source": "/Users/hsanimeh/Desktop/####Test/ MAPD721-P1-Group2- Hisham Abu Sanimeh/Source Code/app/src/main/res/layout/fragment_splash.xml"
+    },
+    {
+        "merged": "/Users/hsanimeh/Desktop/####Test/ MAPD721-P1-Group2- Hisham Abu Sanimeh/Source Code/app/build/intermediates/incremental/mergeBaseDebugResources/stripped.dir/layout/fragment_contact_us.xml",
+        "source": "/Users/hsanimeh/Desktop/####Test/ MAPD721-P1-Group2- Hisham Abu Sanimeh/Source Code/app/src/main/res/layout/fragment_contact_us.xml"
+    },
+    {
+        "merged": "/Users/hsanimeh/Desktop/####Test/ MAPD721-P1-Group2- Hisham Abu Sanimeh/Source Code/app/build/intermediates/incremental/mergeBaseDebugResources/stripped.dir/layout/fragment_chat.xml",
+        "source": "/Users/hsanimeh/Desktop/####Test/ MAPD721-P1-Group2- Hisham Abu Sanimeh/Source Code/app/src/main/res/layout/fragment_chat.xml"
+    },
+    {
+        "merged": "/Users/hsanimeh/Desktop/####Test/ MAPD721-P1-Group2- Hisham Abu Sanimeh/Source Code/app/build/intermediates/incremental/mergeBaseDebugResources/stripped.dir/layout/fragment_add_post.xml",
+        "source": "/Users/hsanimeh/Desktop/####Test/ MAPD721-P1-Group2- Hisham Abu Sanimeh/Source Code/app/src/main/res/layout/fragment_add_post.xml"
+    },
+    {
+        "merged": "/Users/hsanimeh/Desktop/####Test/ MAPD721-P1-Group2- Hisham Abu Sanimeh/Source Code/app/build/intermediates/incremental/mergeBaseDebugResources/stripped.dir/layout/fragment_friends.xml",
+        "source": "/Users/hsanimeh/Desktop/####Test/ MAPD721-P1-Group2- Hisham Abu Sanimeh/Source Code/app/src/main/res/layout/fragment_friends.xml"
+    },
+    {
+        "merged": "/Users/hsanimeh/Desktop/####Test/ MAPD721-P1-Group2- Hisham Abu Sanimeh/Source Code/app/build/intermediates/incremental/mergeBaseDebugResources/stripped.dir/layout/row_more.xml",
+        "source": "/Users/hsanimeh/Desktop/####Test/ MAPD721-P1-Group2- Hisham Abu Sanimeh/Source Code/app/src/main/res/layout/row_more.xml"
+    }
+]

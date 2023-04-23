@@ -1,0 +1,1 @@
+{"className":"com.zero1tech.chat.common.DaggerMyApplication_HiltComponents_SingletonC$ServiceCBuilder","classAnnotations":[],"interfaces":["com.zero1tech.chat.common.MyApplication_HiltComponents$ServiceC$Builder","dagger.hilt.android.internal.builders.ServiceComponentBuilder"],"superClasses":["java.lang.Object"]}

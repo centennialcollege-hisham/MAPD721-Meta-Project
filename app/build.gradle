@@ -1,0 +1,50 @@
+apply plugin: 'com.google.gms.google-services'
+apply plugin: 'kotlin-android'
+
+
+android {
+
+    defaultConfig {
+        applicationId "com.zero1tech.chat"
+    }
+
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+
+        }
+    }
+
+    flavorDimensions "version"
+    productFlavors {
+
+        base {
+            dimension "version"
+        }
+
+        meta {
+            dimension "version"
+            applicationIdSuffix ".meta"
+            versionNameSuffix "-meta"
+
+        }
+    }
+
+}
+
+dependencies {
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation project(":data")
+    implementation project(":analytics")
+    implementation project(":di")
+    implementation 'com.google.firebase:firebase-dynamic-links:21.0.0'
+    implementation 'com.google.android.play:core-ktx:1.8.1'
+    implementation 'androidx.appcompat:appcompat:1.4.0'
+    implementation 'com.google.android.material:material:1.4.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.2'
+
+}
+
+

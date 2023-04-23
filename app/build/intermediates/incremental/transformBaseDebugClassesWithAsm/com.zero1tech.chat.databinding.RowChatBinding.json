@@ -1,0 +1,1 @@
+{"className":"com.zero1tech.chat.databinding.RowChatBinding","classAnnotations":[],"interfaces":["androidx.databinding.Observable","androidx.viewbinding.ViewBinding"],"superClasses":["androidx.databinding.ViewDataBinding","androidx.databinding.BaseObservable","java.lang.Object"]}

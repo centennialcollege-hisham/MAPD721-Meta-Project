@@ -1,0 +1,5 @@
+
+dependencies {
+    api project(":data")
+    implementation project(path: ':analytics')
+}
